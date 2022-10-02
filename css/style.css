@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.box {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.img__display {
+  overflow: hidden;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+.img__display--show {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.img__display--show img {
+  min-width: 100%;
+}
+.img__options {
+  display: flex;
+}
+.img--option {
+  border: 1px solid #999;
+  width: calc((100% - 3rem) / 4);
+  margin: 0.6rem;
+}
+.img--option:nth-child(1), .img--option:nth-child(2), .img--option:nth-child(3) {
+  margin-right: 0;
+}
+.img--option img {
+  height: 160px;
+}
+.img--option:hover {
+  opacity: 0.8;
+}
+
+.product__content {
+  padding: 2rem 2rem;
+}
+.product__title {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #12263a;
+  margin: 1rem 0;
+}
+.product__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 80px;
+  background-color: #12263a;
+}
+.product__link {
+  text-transform: uppercase;
+  font-size: 400;
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 8px;
+  background-color: #256eff;
+  color: #fff;
+  padding: 0 0.5rem;
+  transition: all 0.5s ease;
+}
+.product__link:hover {
+  opacity: 0.9;
+}
+.product__rating {
+  color: #ffc107;
+}
+.product__rating i {
+  font-size: 1.8rem;
+}
+.product__rating span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #252525;
+}
+.product__price {
+  margin: 1.4rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.product__price span {
+  font-weight: 400;
+}
+.product__price--last span {
+  text-decoration: line-through;
+  color: #f64749;
+}
+.product__price--new {
+  color: #256eff;
+}
+.product__detail h2 {
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  color: #12263a;
+  padding-bottom: 1rem;
+}
+.product__detail p {
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  opacity: 0.8;
+}
+.product__detail ul {
+  margin: 1.6rem 0;
+  font-size: 1.3rem;
+}
+.product__detail ul li {
+  margin: 0;
+  background: url(../images/checked.jpg) left center no-repeat;
+  background-size: 18px;
+  padding-left: 2.2rem;
+  margin: 0.7rem 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.product__detail ul li span {
+  font-weight: 400;
+}
+.product__purchase-info {
+  margin: 2rem 0;
+}
+.product__purchase-info input, .product__purchase-info .btn {
+  border: 1.5px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.7rem 2rem;
+  outline: none;
+  margin-right: 0.32rem;
+  margin-bottom: 1.6rem;
+}
+.product__purchase-info input {
+  width: 80px;
+}
+.product__purchase-info .btn {
+  cursor: pointer;
+  color: #fff;
+}
+.product__purchase-info .btn:first-of-type {
+  background-color: #256eff;
+}
+.product__purchase-info .btn:last-of-type {
+  background-color: #f64749;
+}
+
+.social--links {
+  display: flex;
+  align-items: center;
+  font-size: 2.6rem;
+}
+.social--links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #000;
+  border: 1px solid #000;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-size: 1.8rem;
+}
+.social--links a:hover {
+  background-color: #000;
+  border-color: transparent;
+  color: #fff;
+}
+.social--links a:first-of-type {
+  margin-left: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .img--option img {
+    height: 90px;
+  }
+  .product__imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .product__content {
+    padding-top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
